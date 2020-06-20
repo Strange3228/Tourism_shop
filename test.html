@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>QUnit tests example</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.10.0.css">
+    <script type="text/javascript" src="src/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="src/jquery-ui-1.8.18.custom.min.js"></script>
+</head>
+
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.10.0.js"></script>
+    <script>
+        function KeyLogger(target) {
+                this.target = target;
+                this.log = [];
+
+                var that = this;
+                this.target.off("keydown").on("keydown", function (event) {
+                    that.log.push(event.keyCode);
+                });
+            }
+    </script>
+    <script>
+        QUnit.test("keylogger api behavior", function (assert) {
+                var doc = $(document),
+                    keys = new KeyLogger(doc);
+
+                // Trigger the key event
+                doc.trigger($.Event("keydown", { keyCode: 27 }));
+
+                // Verify expected behavior
+                assert.deepEqual(keys.log, [27], "correct key was logged");
+            });
+            
+                
+    </script>
+    <script>
+        QUnit.test("a test", function (assert) {
+                assert.expect(1);
+
+                var $body = $("body");
+
+                $body.on("click", function () {
+                    assert.ok(true, "body was clicked!");
+                });
+
+                $body.trigger("click");
+            });
+
+    </script>
+    <script>
+        QUnit.module("module", {
+                beforeEach: function (assert) {
+                    assert.ok(true, "one extra assert per test");
+                }, afterEach: function (assert) {
+                    assert.ok(true, "and one extra assert after each test");
+                }
+            });
+            QUnit.test("test with beforeEach and afterEach", function (assert) {
+                assert.expect(2);
+            });
+    </script>
+    <script>
+        QUnit.test("Appends a div", function (assert) {
+                var fixture = $("#qunit-fixture");
+
+                fixture.append("<div>hello!</div>");
+                assert.equal($("div", fixture).length, 1, "div added successfully!");
+            });
+
+            QUnit.test("Appends a span", function (assert) {
+                var fixture = $("#qunit-fixture");
+
+                fixture.append("<span>hello!</span>");
+                assert.equal($("span", fixture).length, 1, "span added successfully!");
+            });
+    </script>
+</body>
+
+</html>

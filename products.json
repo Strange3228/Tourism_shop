@@ -4,6 +4,7 @@
             "sys": {"id": "1"},
             "fields": {
                 "title": "Aluminium led cob torch",
+                "category": "Accessories",
                 "price": 10.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Accessories/aluminium_led_cob_torch.PNG"}}}
@@ -13,6 +14,7 @@
             "sys": {"id": "2"},
             "fields": {
                 "title": "Backpack zip torch",
+                "category": "Accessories",
                 "price": 9.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Accessories/backpack_zip_torch.PNG"}}}
@@ -22,6 +24,7 @@
             "sys": {"id": "3"},
             "fields": {
                 "title": "Lifesystem 155 led head torch",
+                "category": "Accessories",
                 "price": 12.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Accessories/lifesystems_155_led_head_torch.PNG"}}}
@@ -31,15 +34,17 @@
             "sys": {"id": "4"},
             "fields": {
                 "title": "Pocket sized travel torch",
+                "category": "Accessories",
                 "price": 10.99,
                 "image":{"fields":{"file":{"url": 
-                    "assets/images/Accessories/pocket_sized_travel_torch"}}}
+                    "assets/images/Accessories/pocket_sized_travel_torch.PNG"}}}
             }
         },
         {
             "sys": {"id": "5"},
             "fields": {
                 "title": "Trespass 3 led head torch",
+                "category": "Accessories",
                 "price": 9.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Accessories/trespass_3_led_head_torch.PNG"}}}
@@ -49,15 +54,17 @@
             "sys": {"id": "6"},
             "fields": {
                 "title": "Trespass wind up led torch",
+                "category": "Accessories",
                 "price": 12.99,
                 "image":{"fields":{"file":{"url": 
-                    "assets/images/Accessories/trespass_wind_up_led_torch"}}}
+                    "assets/images/Accessories/trespass_wind_up_led_torch.PNG"}}}
             }
         },
         {
             "sys": {"id": "7"},
             "fields": {
-                "title": "Backpack_extra",
+                "title": "Backpack extra",
+                "category": "Bags and holders",
                 "price": 21.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Bags_and_holders/backpack_extra.PNG"}}}
@@ -67,6 +74,7 @@
             "sys": {"id": "8"},
             "fields": {
                 "title": "Tote bag light",
+                "category": "Bags and holders",
                 "price": 19.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Bags_and_holders/tote_bag_light.PNG"}}}
@@ -76,6 +84,7 @@
             "sys": {"id": "9"},
             "fields": {
                 "title": "Tote bag",
+                "category": "Bags and holders",
                 "price": 17.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Bags_and_holders/tote_bag.PNG"}}}
@@ -85,6 +94,7 @@
             "sys": {"id": "10"},
             "fields": {
                 "title": "Travel vag light",
+                "category": "Bags and holders",
                 "price": 18.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Bags_and_holders/travel_vag_light.PNG"}}}
@@ -94,6 +104,7 @@
             "sys": {"id": "11"},
             "fields": {
                 "title": "Triple packing cubes",
+                "category": "Bags and holders",
                 "price": 15.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Bags_and_holders/triple_packing_cubes.PNG"}}}
@@ -103,6 +114,7 @@
             "sys": {"id": "12"},
             "fields": {
                 "title": "Zip cubes",
+                "category": "Bags and holders",
                 "price": 15.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Bags_and_holders/zip_cubes.png"}}}
@@ -112,6 +124,7 @@
             "sys": {"id": "13"},
             "fields": {
                 "title": "Belt bank",
+                "category": "Secuirity",
                 "price": 9.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Security/belt_bank.PNG"}}}
@@ -121,6 +134,7 @@
             "sys": {"id": "14"},
             "fields": {
                 "title": "Money belt",
+                "category": "Secuirity",
                 "price": 9.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Security/money_belt.PNG"}}}
@@ -130,6 +144,7 @@
             "sys": {"id": "15"},
             "fields": {
                 "title": "Passport pouch",
+                "category": "Secuirity",
                 "price": 10.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Security/passport_pouch.png"}}}
@@ -139,15 +154,17 @@
             "sys": {"id": "16"},
             "fields": {
                 "title": "RFID organizer",
+                "category": "Secuirity",
                 "price": 8.99,
                 "image":{"fields":{"file":{"url": 
-                    "assets/images/Security/rifd_organizer.PNG"}}}
+                    "assets/images/Security/rfid_organizer.PNG"}}}
             }
         },
         {
             "sys": {"id": "17"},
             "fields": {
                 "title": "Shoulder wallet",
+                "category": "Secuirity",
                 "price": 8.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Security/shoulder_wallet.PNG"}}}
@@ -157,6 +174,7 @@
             "sys": {"id": "18"},
             "fields": {
                 "title": "Travel wallet",
+                "category": "Secuirity",
                 "price": 12.99,
                 "image":{"fields":{"file":{"url": 
                     "assets/images/Security/travel_wallet.png"}}}
