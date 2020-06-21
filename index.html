@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Equipment</title>
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/styles.css">
     <script src="https://kit.fontawesome.com/629c0bcef1.js" crossorigin="anonymous"></script>
 </head>
@@ -42,23 +44,29 @@
             <h2>our products</h2>
         </div>
         <div class="products-center">
-            <!--Single product-->
-            <article class="product">
-                <div class="img-container">
-                    <img src="assets/images/Accessories/aluminium_led_cob_torch.PNG" alt="product" class="product-img">
-                    <button class="bag-btn" data-id="1">
-                        <i class="fas fa-shopping-cart"></i>
-                        add to cart
-                    </button>
-                </div>
-                <h3>Aluminium led cob torch</h3>
-                <h4>10,99</h4>
-            </article>
-            <!--end of single product-->
+            <div class="category-title">
+                <h3>Accessories</h3>
+            </div>
+            <div class="owl-carousel owl_carousel_1 owl-theme">
+                <!--ACESSORIES-->
+            </div>
+            <hr style="margin-top: 25px;">
+            <div class="category-title">
+                <h3>Bags And Holders</h3>
+            </div>
+            <div class="owl-carousel owl_carousel_2 owl-theme">
+                <!--BAGS AND HOLDERS-->
+            </div>
+            <hr style="margin-top: 25px;">
+            <div class="category-title">
+                <h3>Secuirity</h3>
+            </div>
+            <div class="owl-carousel owl_carousel_3 owl-theme">
+                <!--Secuirity-->
+            </div>
         </div>
     </section>
     <!---->
-
     <!--CART-->
     <div class="cart-overlay">
         <div class="cart">
@@ -85,11 +93,25 @@
             </div>
             <div class="cart-footer">
                 <h3>your total : $ <span class="cart-total">0</span></h3>
+                <div class="calendar">
+                    <label for="dateofrent">Date Of Rent Start</label>
+                    <input type="date" name="dateofrent" id="dateofrent">
+                </div>
                 <button class="clear-cart banner-btn">clear cart</button>
+                <button class="buy-button banner-btn">Rent equipment</button>
             </div>
         </div>
     </div>
     <!---->
+    <!--FOOTER-->
+    <footer style="text-align: end; padding: 5px;"> 
+        <h3>Designed and maked by Maksym Kutasievich. 2020</h3>
+    </footer>
+    <!---->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="src/app.js"></script>
+    <script src="src/owl.carousel.min.js"></script>
+    <script src="src/notify.min.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>QUnit tests example</title>
+    <title>TESTS QUNIT</title>
     <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.10.0.css">
     <script type="text/javascript" src="src/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="src/jquery-ui-1.8.18.custom.min.js"></script>
@@ -13,6 +13,21 @@
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
     <script src="https://code.jquery.com/qunit/qunit-2.10.0.js"></script>
+    <script>
+        QUnit.test("Appends a paragraph", function (assert) {
+                var fixture = $("#qunit-fixture");
+
+                fixture.append("<p>hello!</p>");
+                assert.equal($("p", fixture).length, 1, "Paragraph added successfully!");
+            });
+
+            QUnit.test("Appends a Header", function (assert) {
+                var fixture = $("#qunit-fixture");
+
+                fixture.append("<header>hello!</header>");
+                assert.equal($("header", fixture).length, 1, "Header added successfully!");
+            });
+    </script>
     <script>
         function KeyLogger(target) {
                 this.target = target;
@@ -39,13 +54,13 @@
                 
     </script>
     <script>
-        QUnit.test("a test", function (assert) {
+        QUnit.test("Button click test", function (assert) {
                 assert.expect(1);
 
                 var $body = $("body");
 
                 $body.on("click", function () {
-                    assert.ok(true, "body was clicked!");
+                    assert.ok(true, "button was clicked!");
                 });
 
                 $body.trigger("click");
@@ -63,22 +78,7 @@
             QUnit.test("test with beforeEach and afterEach", function (assert) {
                 assert.expect(2);
             });
-    </script>
-    <script>
-        QUnit.test("Appends a div", function (assert) {
-                var fixture = $("#qunit-fixture");
-
-                fixture.append("<div>hello!</div>");
-                assert.equal($("div", fixture).length, 1, "div added successfully!");
-            });
-
-            QUnit.test("Appends a span", function (assert) {
-                var fixture = $("#qunit-fixture");
-
-                fixture.append("<span>hello!</span>");
-                assert.equal($("span", fixture).length, 1, "span added successfully!");
-            });
-    </script>
+        </script>
 </body>
 
 </html>

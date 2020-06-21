@@ -11,8 +11,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #e7e2dd;
-  z-index: 1;
+  background: white;
+  z-index: 2;
 }
 
 .navbar-center {
@@ -51,7 +51,7 @@
 }
 
 :root {
-  --primaryColor: #f09d51;
+  --primaryColor: #807f7e;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -74,7 +74,7 @@ body {
 
 .hero {
   min-height: calc(100vh - 60px);
-  background: url("images/bg-hero.jpg") center/cover no-repeat;
+  background: url("images/bg.jpg") center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,26 +125,41 @@ body {
 .section-title h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+}
+
+.category-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+  margin-top: 25px;
 }
 
 .products-center {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 2rem;
+}
+
+.product {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .img-container {
   position: relative;
   overflow: hidden;
+  max-width: 300px;
 }
 
 .bag-btn {
@@ -212,9 +227,15 @@ body {
   height: 100%;
   -webkit-transition: var(--mainTransition);
   transition: var(--mainTransition);
-  background: rgba(240, 158, 82, 0.5);
+  background: rgba(167, 165, 163, 0.5);
   z-index: 2;
   visibility: hidden;
+}
+
+.calendar {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .cart {
